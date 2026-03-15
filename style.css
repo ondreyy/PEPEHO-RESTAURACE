@@ -1,0 +1,356 @@
+@import url(fontello-nav/css/fontello.css);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* H1 */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap'); /* H2, H3, H4, H5, H6 */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap'); /* HLAVNÍ TEXT*/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Round');
+
+p, a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+    --zelena: #C2BB47;
+    --zluta: #F8E7A1;
+    --orange: hsl(36, 84%, 56%);
+    --hneda: hsl(35, 68%, 41%);
+    --bila: hsl(51, 40%, 90%);
+    --tmave-hneda: #B75202;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+body {
+    background-image: url(imgs/background.jpg);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+   
+}
+
+html, body {
+    height: 100%;
+}
+
+#container {
+    display: grid;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--zluta);
+    text-align: center;
+}
+
+.line {
+    border-bottom: 3px solid var(--orange); 
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 56px;
+    font-family: 'Lobster', cursive;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Comfortaa', cursive;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-left: .5em;
+}
+
+h3 {
+    padding-left: .5em;
+}
+
+nav {
+    background-color: var(--orange);
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.menu-item a {
+    box-shadow: inset 0 0 0 0 var(--hneda);
+    color: var(--hneda);
+    transition: color .2s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+.menu-item a:hover {
+    font-weight: bold;
+    box-shadow: inset 175px 0 0 0 var(--hneda);
+    color: white;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.menu-subitem a {
+    box-shadow: inset 0 0 0 0 var(--zelena);
+    color: black;
+    transition: color .2s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+.menu-subitem a:hover {
+    box-shadow: inset 160px 0 0 0 var(--zelena);
+}
+
+footer {
+    background-color: var(--tmave-hneda);
+    text-align: center;
+    color: black;
+}
+
+footer #autor {
+    font-size: 1em;
+}
+
+footer .info {
+    font-size: .8em;
+    margin-top: -.5em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--bila);
+    transition: color .3s ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--zluta);
+}
+
+main {
+    background-color: white;
+    padding: 1em;
+}
+
+main p {
+    padding: .5em;
+}
+
+#foto-restaurace {
+    text-align: center;
+}
+
+/* MENU */
+
+#tabulka table {
+    margin: 0 auto;
+}
+
+th {
+    text-align: left;
+    font-size: 1.1em;
+}
+
+td, th {
+    padding-top: .8em;
+}
+
+.jidlo {
+    width: 500px;
+    font-size: 1em;
+}
+
+.cena {
+    font-size: 1em;
+    text-align: right;
+    width: 100px;
+}
+
+.cena:after {
+    content: ",- Kč";
+}
+
+.detail {
+    font-size: .75em;
+}
+
+table {
+    padding-top: .5em;
+}
+
+/* polední menu šipkou */
+h3 .material-icons-round {
+    font-size: 1.25em;
+    vertical-align: middle;
+    border: black solid .10em;
+    border-radius: 50px;
+    margin-left: .25em;
+}
+
+#tabulka {
+    display: none;
+}
+
+.up {
+    display: none;
+}
+
+section > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#pepe {
+    display: none;
+}
+
+#vyvolej-pepeho {
+    display:inline-block;
+    cursor: pointer;
+    color: black;
+    transition: .5s color ease-in-out;
+}
+
+#vyvolej-pepeho:hover {
+    transition: .5s color ease-in;
+    color: #5A8D3E;
+}
+
+
+section.show #tabulka {
+    display: block;
+}
+section.show .up {
+    display: inline-block;
+}
+section.show .down {
+    display: none;
+}
+
+#poledni-menu h3 {
+    text-align: center;
+}
+
+#poledni-menu h3:hover {
+    text-decoration:underline;
+}
+
+#poledni-menu h3 {
+   margin: -.1em;
+}
+
+h1 div {
+    display:inline-block;
+}
+
+h1 a {
+    text-decoration: none; color:inherit; font-family: inherit;
+}
+
+
+@media screen and (max-width:1280px) { /* MALÉ OBRAZOVKY */
+    .menu-subitem {
+        display: none;
+        position: absolute;
+        min-width: 175px;
+        top: 50px;
+        left: 15px;
+        background-color: var(--zluta);
+        color: black;
+    }
+    #pepe {
+        position: absolute;
+        top: 2%;
+        width: 116px;
+        height: 116px;
+        margin-left: 10em;
+    }
+
+    .menu-item a:hover {
+        box-shadow: inset 210px 0 0 0 var(--hneda);
+    }
+    
+    #foto-restaurace img {
+        max-width: 100%;
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        object-fit: cover;
+    
+    }
+
+    #logo {
+        width: 90px;
+        
+    }
+
+    span {
+        display: block;
+    }
+
+    h1 #logo {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:916px) { /* MALÉ OBRAZOVKY */
+    nav {
+        height:200px;
+    }
+
+}
+
+@media screen and (min-width:1281px) { /* VELKÉ OBRAZOVKY */
+    #logo {
+        width: 9%;
+        vertical-align: middle;
+        margin-right: .25em;
+    }
+
+    #foto-restaurace img {
+        max-width: 100%;
+        width: 50%;
+        height: 525px;
+        border-radius: 5px;
+        float: right;
+        margin: 1em;
+        object-fit: cover;
+    }
+
+    .menu-subitem {
+        display: none;
+        position: absolute;
+        min-width: 140px;
+        top: 50px;
+        left: 13px;
+        background-color: var(--zluta);
+        color: black;
+    }
+    
+    .menu-item:hover .menu-subitem{
+        display: block;
+    }
+    
+    .menu-subitem a {
+        height: 40px;
+        justify-content: left;
+        padding: 0 1em;
+        white-space: nowrap;
+    }
+    #pepe {
+        position: absolute;
+        top: 2%;
+        width: 116px;
+        height: 116px;
+        margin-left: 14.5em;
+    }
+}

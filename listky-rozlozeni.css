@@ -1,0 +1,96 @@
+aside {
+    background-color: white;
+}
+
+.jidlo {
+    width: 700px !important;
+    font-size: 1em;
+}
+
+.cena {
+    width: 150px;
+    text-align: right;
+}
+
+@media screen and (min-width:200px) and (max-width:1280px) {
+
+    .bocni-menu{
+        display: none;
+    }
+
+    .horni-menu {
+        display: grid;
+        background-color: var(--zluta);
+        overflow: auto;
+        white-space: nowrap;
+    }
+    
+    .horni-menu a {
+        text-decoration: none;
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+
+    .horni-menu a:hover {
+        transition: .25s;
+        color: white;
+        font-weight: bold;
+        background-color: var(--zelena);
+    }
+
+}
+
+@media screen and (min-width:1281px) {
+    .horni-menu {
+        display: none;
+    }
+
+    header {
+        grid-column: 1 / 3;
+    }
+    
+    nav {
+        grid-column: 1/3;
+    }
+    
+    footer {
+        grid-column: 1 / 3;
+    }
+    #container {
+        grid-template-columns: 150px 1fr;
+    }
+    
+    .bocni-menu {
+        margin-top: 5.6em;
+        margin-right: .5em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    
+    nav a:hover {
+        font-weight: bold;
+    }
+    
+    .menu-item {
+        position: relative;
+    }
+    
+    .bocni-menu a {
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        height: 100%;
+        text-decoration: none;
+        color: inherit;
+        padding-bottom: .75em;
+    
+    }
+    .bocni-menu a:hover {
+        font-weight: bold;
+        transition: .25s;
+        color: var(--hneda)
+    }
+}

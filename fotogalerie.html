@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fotogalerie.css">
+    <script type="text/javascript" src="zabak.js"></script>
+    <title>Fotogalerie - Pepého Restaurant</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1> <span><img id="logo" src="logo.svg" alt="Logo"></span><span><div id="vyvolej-pepeho" onclick="peperest()">Pepého</div> Restaurant</span></h1>
+            <div id="peperest">
+                <img src="imgs/pepe-rest.jpg" title="Pepe The Žabák" alt="Pepe The Žabák">
+            </div>
+        </header>
+
+    <nav id="menu">
+        <div class="menu-item">
+            <a class="icon-home" href="index.html">Úvod</a>
+        </div>
+        <div class="menu-item">
+            <a class="icon-food" href="jidelni-listek.html">Jídelní lístek</a>
+            <div class="menu-subitem">
+                <a href="jidelni-listek.html#predkrmy">Předkrmy</a>
+                <a href="jidelni-listek.html#polevky">Polévky</a>
+                <a href="jidelni-listek.html#bezmasa">Bezmasá</a>
+                <a href="jidelni-listek.html#kureci">Kuřecí</a>
+                <a href="jidelni-listek.html#veprove">Vepřové</a>
+                <a href="jidelni-listek.html#hovezi">Hovězí</a>
+                <a href="jidelni-listek.html#pizza">Pizza</a>
+                <a href="jidelni-listek.html#testoviny">Těstoviny</a>
+                <a href="jidelni-listek.html#salaty">Saláty</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a class="icon-drink" href="napojovy-listek.html">Nápoje</a>
+            <div class="menu-subitem">
+                <a href="napojovy-listek.html#vody">Vody</a>
+                <a href="napojovy-listek.html#dzusy">Džusy</a>
+                <a href="napojovy-listek.html#tocene">Točené</a>
+                <a href="napojovy-listek.html#nealko">Nealko</a>
+                <a href="napojovy-listek.html#kavacaj">Káva a čaj</a>
+                <a href="napojovy-listek.html#alko">Alkohol</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a class="icon-dessert" href="dezerty.html">Dezerty</a>
+        </div>
+        <div class="menu-item">
+            <a class="icon-camera" href="fotogalerie.html">Fotogalerie</a>
+        </div>
+        <div class="menu-item">
+            <a class="icon-group" href="kontakt.html">Kontakty</a>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Fotogalerie</h2>
+        <div class="line"></div>
+        <br>
+        <div id="gallery">
+
+        <div class="gallery-item"><img id="myImg" style="width:100%" src="imgs/pexels-chan-walrus-941861.jpg" alt="&copy; Chan Walrus - Pexels"></div>
+        <div class="gallery-item"><img id="myImg2" style="width:100%" src="imgs/pexels-pixabay-260922.jpg" alt="&copy; Pixabay - Pexels"></div>
+        <div class="gallery-item"><img id="myImg3" style="width:100%" src="imgs/pexels-creative-vix-370984.jpg" alt="&copy; Creative Vix  - Pexels"></div>
+        <div class="gallery-item"><img id="myImg4" style="width:100%" src="imgs/woman-ge4b087e94_1280.jpg" alt="Pixabay | Free to use - no attribution required"></div>
+        <div class="gallery-item"><img id="myImg12" style="width:100%" src="imgs/pexels-chevanon-photography-302902.jpg" alt="Chevanon Photography - Pexels"></div>
+        <div class="gallery-item"><img id="myImg6" style="width:100%" src="imgs/pexels-valeria-boltneva-1251196.jpg" alt="&copy; Valeria Boltneva - Pexels"></div>
+        <div class="gallery-item"><img id="myImg8" style="width:100%" src="imgs/pexels-lukas-1352274.jpg" alt="&copy; Lukas - Pexels"></div>
+        <div class="gallery-item"><img id="myImg9" style="width:100%" src="imgs/pizza-g08ef9f444_1280.jpg" alt="Pixabay | Free to use - no attribution required"></div>
+        <div class="gallery-item"><img id="myImg5" style="width:100%" src="imgs/pexels-sebastian-coman-photography-3590401.jpg" alt="&copy; Sebastian Coman - Pexels"></div>
+        <div class="gallery-item"><img id="myImg7" style="width:100%" src="imgs/pexels-chan-walrus-1059943.jpg" alt="&copy; Chan Walrus - Pexels"></div>
+        <div class="gallery-item"><img id="myImg10" style="width:100%" src="imgs/pexels-engin-akyurt-1487511.jpg" alt="Engin Akyurt - Pexels"></div>
+        <div class="gallery-item"><img id="myImg11" style="width:100%" src="imgs/pexels-dmitry-zvolskiy-1721932.jpg" alt="Dmitry Zvolskiy - Pexels"></div>
+        
+
+        
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img">
+            <div id="caption"></div>
+          </div>
+    </main>
+    
+    <footer>
+        <p id="autor"><b>Ondřej Foltín &copy; 2022</b></p>
+        <p class="info">Images from <a href="https://www.pexels.com/cs-cz" target="_blank">Pexels</a> & <a
+                href="https://pixabay.com/" target="_blank">Pixabay</a> & <a href="https://unsplash.com/"
+                target="_blank">Unsplash</a></p>
+        <p class="info">Icons from <a href="https://fontello.com" target="_blank">Fontello</a> & <a
+                href="https://www.svgrepo.com" target="_blank">SVG Repo</a></p>
+    </footer>
+    </div>
+
+    <script src="galerie.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="listky-style.css">
+    <script type="text/javascript" src="zabak.js"></script>
+    <title>Jídelní lístek - Pepého Restaurant</title>
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1> <span><img id="logo" src="logo.svg" alt="Logo"></span><span><div id="vyvolej-pepeho" onclick="pepe()">Pepého</div> Restaurant</span></h1>
+            <div id="pepe">
+                <img src="imgs/pepezabicka.png" title="Pepe The Žabák" alt="Pepe The Žabák">
+            </div>
+        </header>
+
+    <nav id="menu">
+        <div class="menu-item">
+            <a class="icon-home" href="index.html">Úvod</a>
+        </div>
+        <div class="menu-item">
+            <a class="icon-food" href="jidelni-listek.html">Jídelní lístek</a>
+            <div class="menu-subitem">
+                <a href="jidelni-listek.html#predkrmy">Předkrmy</a>
+                <a href="jidelni-listek.html#polevky">Polévky</a>
+                <a href="jidelni-listek.html#bezmasa">Bezmasá</a>
+                <a href="jidelni-listek.html#kureci">Kuřecí</a>
+                <a href="jidelni-listek.html#veprove">Vepřové</a>
+                <a href="jidelni-listek.html#hovezi">Hovězí</a>
+                <a href="jidelni-listek.html#pizza">Pizza</a>
+                <a href="jidelni-listek.html#testoviny">Těstoviny</a>
+                <a href="jidelni-listek.html#salaty">Saláty</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a class="icon-drink" href="napojovy-listek.html">Nápoje</a>
+            <div class="menu-subitem">
+                <a href="napojovy-listek.html#vody">Vody</a>
+                <a href="napojovy-listek.html#dzusy">Džusy</a>
+                <a href="napojovy-listek.html#tocene">Točené</a>
+                <a href="napojovy-listek.html#nealko">Nealko</a>
+                <a href="napojovy-listek.html#kavacaj">Káva a čaj</a>
+                <a href="napojovy-listek.html#alko">Alkohol</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a class="icon-dessert" href="dezerty.html">Dezerty</a>
+        </div>
+        <div class="menu-item">
+            <a class="icon-camera" href="fotogalerie.html">Fotogalerie</a>
+        </div>
+        <div class="menu-item">
+            <a class="icon-group" href="kontakt.html">Kontakty</a>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Dezerty</h2>
+        <div class="line"></div>
+        <h3>Mini dortíky</h3>
+        <div class="foto">
+            <img src="imgs/dezerty/black-forest-g4894bc66f_1280.jpg" alt="">
+            </div>
+        <div class="line"></div>
+        <table>
+            <tr>
+                <td class="jidlo">čokoládové pokušení s malinami</td>
+                <td class="cena">123</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">vanilkový sen s jahodami</td>
+                <td class="cena">123</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">kousek štěstí (medovník)</td>
+                <td class="cena">123</td>
+            </tr>
+        </table>
+        <br>
+        <div class="line"></div>
+        <h3>Koláče</h3>
+        <div class="foto">
+            <img src="imgs/dezerty/apple-pie-g11e3acdf1_1280.jpg" alt="">
+            </div>
+        <div class="line"></div>
+        <table>
+            <tr>
+                <td class="jidlo">Koláč jablečný</td>
+                <td class="cena">65</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Koláč citronový</td>
+                <td class="cena">65</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Koláč malinový</td>
+                <td class="cena">65</td>
+            </tr>
+        </table>
+
+        <br>
+        <div class="line"></div>
+        <h3>Zmrzliny</h3>
+        <div class="foto">
+            <img src="imgs/dezerty/pexels-lukas-1352278.jpg" alt="">
+            </div>
+        <div class="line"></div>
+        <table>
+            <tr>
+                <td class="jidlo">Točená zmrzlina</td>
+                <td class="cena">25</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Zmrzlinový pohár - vanilková zmrzlina, šlehačka, topping, sladký oplatek</td>
+                <td rowspan="2" class="cena">65</td>
+            </tr>
+            <tr>
+                <td class="detail">2ks</td>
+            </tr>
+        </table>
+        <br>
+    </main>
+    
+    <footer>
+        <p id="autor"><b>Ondřej Foltín &copy; 2022</b></p>
+        <p class="info">Images from <a href="https://www.pexels.com/cs-cz" target="_blank">Pexels</a> & <a
+                href="https://pixabay.com/" target="_blank">Pixabay</a> & <a href="https://unsplash.com/"
+                target="_blank">Unsplash</a></p>
+        <p class="info">Icons from <a href="https://fontello.com" target="_blank">Fontello</a> & <a
+                href="https://www.svgrepo.com" target="_blank">SVG Repo</a></p>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="listky-rozlozeni.css">
+    <link rel="stylesheet" href="listky-style.css">
+    <script type="text/javascript" src="zabak.js"></script>
+    <title>Jídelní lístek - Pepého Restaurant</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1> <span><img id="logo" src="logo.svg" alt="Logo"></span><span><div id="vyvolej-pepeho" onclick="pepe()">Pepého</div> Restaurant</span></h1>
+            <div id="pepe">
+                <img src="imgs/pepezabicka.png" title="Pepe The Žabák" alt="Pepe The Žabák">
+            </div>
+        </header>
+
+    <nav id="menu">
+        <div class="menu-item">
+            <a class="icon-home" href="index.html">Úvod</a>
+        </div>
+        <div class="menu-item">
+            <a class="icon-food" href="jidelni-listek.html">Jídelní lístek</a>
+            <div class="menu-subitem">
+                <a href="jidelni-listek.html#predkrmy">Předkrmy</a>
+                <a href="jidelni-listek.html#polevky">Polévky</a>
+                <a href="jidelni-listek.html#bezmasa">Bezmasá</a>
+                <a href="jidelni-listek.html#kureci">Kuřecí</a>
+                <a href="jidelni-listek.html#veprove">Vepřové</a>
+                <a href="jidelni-listek.html#hovezi">Hovězí</a>
+                <a href="jidelni-listek.html#pizza">Pizza</a>
+                <a href="jidelni-listek.html#testoviny">Těstoviny</a>
+                <a href="jidelni-listek.html#salaty">Saláty</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a class="icon-drink" href="napojovy-listek.html">Nápoje</a>
+            <div class="menu-subitem">
+                <a href="napojovy-listek.html#vody">Vody</a>
+                <a href="napojovy-listek.html#dzusy">Džusy</a>
+                <a href="napojovy-listek.html#tocene">Točené</a>
+                <a href="napojovy-listek.html#nealko">Nealko</a>
+                <a href="napojovy-listek.html#kavacaj">Káva a čaj</a>
+                <a href="napojovy-listek.html#alko">Alkohol</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a class="icon-dessert" href="dezerty.html">Dezerty</a>
+        </div>
+        <div class="menu-item">
+            <a class="icon-camera" href="fotogalerie.html">Fotogalerie</a>
+        </div>
+        <div class="menu-item">
+            <a class="icon-group" href="kontakt.html">Kontakty</a>
+        </div>
+    </nav>
+
+    <aside>
+        <div class="bocni-menu">
+            <a href="#predkrmy">Předkrmy</a>
+            <a href="#polevky">Polévky</a>
+            <a href="#bezmasa">Bezmasá</a>
+            <a href="#kureci">Kuřecí</a>
+            <a href="#veprove">Vepřové</a>
+            <a href="#hovezi">Hovězí</a>
+            <a href="#pizza">Pizza</a>
+            <a href="#testoviny">Těstoviny</a>
+            <a href="#salaty">Saláty</a>
+    </div>
+    <div class="horni-menu">
+        <a href="#predkrmy">Předkrmy</a>
+        <a href="#polevky">Polévky</a>
+        <a href="#bezmasa">Bezmasá</a>
+        <a href="#kureci">Kuřecí</a>
+        <a href="#veprove">Vepřové</a>
+        <a href="#hovezi">Hovězí</a>
+        <a href="#pizza">Pizza</a>
+        <a href="#testoviny">Těstoviny</a>
+        <a href="#salaty">Saláty</a>
+    </div>
+    <div class="line"></div>
+    <br>
+    </aside>
+
+    <main>
+        <h2>Jídelní lístek</h2>
+        <div class="line"></div>
+
+        <h3 id="predkrmy">Předkrmy</h3>
+        <div class="foto">
+            <img src="imgs/jidelni/pexels-ahmed-rabea-4559174.jpg" alt="">
+            </div>
+        <div class="line"></div>
+        <table>
+            <tr>
+                <td class="jidlo">Pikantní křídla</td>
+                <td class="cena" rowspan="2">79</td>
+            </tr>
+            <tr>
+                <td class="detail">8ks | grilované kuřecí křidýlka s jemnou medovou pikantní omáčkou</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Toast "THALIE"</td>
+                <td class="cena" rowspan="2">69</td>
+            </tr>
+            <tr>
+                <td class="detail">toast, ananas, smetana, pražská šunka, eidamský sýr (alergeny 1, 7)</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Toast "PIKANT"</td>
+                <td class="cena" rowspan="2">69</td>
+            </tr>
+            <tr>
+                <td class="detail"> topinka, vepřová kýta, zelenina, kečup, chilli, eidamský sýr (alergeny 1, 7)</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Masový talířek, zeleninová obloha, křen, hořčice</td>
+                <td class="cena" rowspan="2">149</td>
+            </tr>
+            <tr>
+                <td class="detail">šunka, angl, slanina, krkovička, uzený jazyk</td>
+            </tr>
+        </table>
+        <br>
+
+        <div class="line"></div>
+        <h3 id="polevky">Polévky</h3>
+        <div class="foto">
+            <img src="imgs/jidelni/potato-soup-g308ad177a_1280.jpg" alt="Pixabay">
+            </div>
+        <div class="line"></div>
+
+        <table class="jidla">
+            <tr>
+                <td class="jidlo">Hovězí vývar s nudlemi, masem a zeleninou</td>
+                <td class="cena" rowspan="1">45</td>
+            </tr>
+            <tr>
+                <td class="jidlo">Staročeská česnečka s krutóny, sýrem a šunkou</td>
+                <td class="cena" rowspan="1">45</td>
+            </tr>
+            <tr>
+                <td class="jidlo">Frankfurtská s párkem</td>
+                <td class="cena" rowspan="1">45</td>
+            </tr>
+        </table>
+
+        <div class="line"></div>
+        <h3 id="bezmasa">Bezmasá jídla</h3>
+        <div class="foto">
+            <img src="imgs/jidelni/elena-leya-eoY3mnZTJmY-unsplash.jpg" alt="Nenašel jsem smažák, tak něco podobnýho tomu | Photo by Elena Leya on Unsplash">
+            </div>
+        <div class="line"></div>
+
+        <table>
+            <tr>
+                <td class="jidlo">Smažený sýr eidam</td>
+                <td class="cena" rowspan="2">135</td>
+            </tr>
+            <tr>
+                <td class="detail">120g | s bramborem/americké brambory/hranolky/krokety + domací tatarka</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">SMAŽÁK SPECIÁL</td>
+                <td class="cena" rowspan="2">185</td>
+            </tr>
+            <tr>
+                <td class="detail">160g | smažený čedar s bramborem/americké brambory/hranolky/krokety + domací tatarka</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Borůvkové kynuté knedlíky</td>
+                <td class="cena" rowspan="2">115</td>
+            </tr>
+            <tr>
+                <td class="detail">250g | domácí šlehačka a čokoláda</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Jahodové tvarohové knedlíky</td>
+                <td class="cena" rowspan="2">125</td>
+            </tr>
+            <tr>
+                <td class="detail">180g | domácí šlehačka a čokoláda</td>
+            </tr>
+        </table>
+
+
+        <br>
+
+        <div class="line"></div>
+        <h3 id="kureci">Kuřecí</h3>
+        <div class="foto">
+            <img src="imgs/jidelni/leo-roza-P_z_xlMGuEk-unsplash.jpg" alt="Photo by Léo Roza on Unsplash">
+            </div>
+        <div class="line"></div>
+
+        <table>
+            <tr>
+                <td class="jidlo">Kuřecí RIZOTO se zeleninou</td>
+                <td class="cena" rowspan="2">125</td>
+            </tr>
+            <tr>
+                <td class="detail">250g | sýr, okurka a červená řepa</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Italské GNOCCHI </td>
+                <td class="cena" rowspan="2">125</td>
+            </tr>
+            <tr>
+                <td class="detail">250g | kuřecí maso, listový špenát, česnek a sýr</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Pikantní kuřecí steak</td>
+                <td class="cena" rowspan="2">220</td>
+            </tr>
+            <tr>
+                <td class="detail">150g |  pikantní rajčatová omáčka, anglická slanina a mozzarella</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Smažený kuřecí řízek</td>
+                <td class="cena" rowspan="2">189</td>
+            </tr>
+            <tr>
+                <td class="detail">150g | s bramborem/americké brambory/hranolky/krokety</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Kuřecí kapsička</td>
+                <td class="cena" rowspan="2">189</td>
+            </tr>
+            <tr>
+                <td class="detail">150g | plněná angl. slaninou, mozzarelou, vajíčkem a bylinkami</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <div class="line"></div>
+        <h3 id="veprove">Vepřové</h3>
+        <div class="foto">
+            <img src="imgs/jidelni/flesh-g6df531151_1920.jpg" alt="Pixabay">
+            </div>
+        <div class="line"></div>
+
+        <table>
+            <tr>
+                <td class="jidlo">Smažená vepřová kapsa „ mistra Salieriho“</td>
+                <td class="cena" rowspan="2">169</td>
+            </tr>
+            <tr>
+                <td class="detail">150g | vepřová kotleta, salám, sýr, žampióny</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Special - Maďarská panenka s pepřovou omáčkou</td>
+                <td class="cena" rowspan="2">195</td>
+            </tr>
+            <tr>
+                <td class="detail">200g | špikovaná čabajskou klobáskou a opékaná na grilu</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Katův šleh</td>
+                <td class="cena" rowspan="2">209</td>
+            </tr>
+            <tr>
+                <td class="detail">300g | vepřové nudličky, cibule a paprika, bramboráčky</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Medvědí tlapa</td>
+                <td class="cena" rowspan="2">209</td>
+            </tr>
+            <tr>
+                <td class="detail">300g | vepřová krkovice, hořčice, křen</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <div class="line"></div>
+        <h3 id="hovezi">Hovězí</h3>
+        <div class="foto">
+            <img src="imgs/jidelni/pexels-kasumi-loffler-3535383.jpg" alt="Pexels - Kasumi Loffler">
+            </div>
+        <div class="line"></div>
+    
+        <table>
+            <tr>
+                <td class="jidlo">SVÍČKOVÁ NA SMETANĚ, houskový knedlík</td>
+                <td class="cena" rowspan="2">189</td>
+            </tr>
+            <tr>
+                <td class="detail">150g | brusinky, domácí šlehačka </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Hovězí nudličky Stroganov</td>
+                <td class="cena" rowspan="2">219</td>
+            </tr>
+            <tr>
+                <td class="detail">150g | hovězí svíčková, žampióny, steril. okurek, kečup, smetana</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Special - BIFTEK „Kmotr“</td>
+                <td class="cena" rowspan="2">219</td>
+            </tr>
+            <tr>
+                <td class="detail">339g | grilovaná hovězí svíčková s opečenou anglickou slaninou, sázeným vejcem, česnekovou omáčkou</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <div class="line"></div>
+        <h3 id="pizza">Pizza</h3>
+        <div class="foto">
+            <img src="imgs/jidelni/vitalii-chernopyskyi-Oxb84ENcFfU-unsplash (1).jpg" alt="Photo by Vitalii Chernopyskyi on Unsplash">
+            </div>
+        <div class="line"></div>
+
+        <table>
+            <tr>
+                <td class="jidlo">Margharita</td>
+                <td class="cena" rowspan="2">139</td>
+            </tr>
+            <tr>
+                <td class="detail">mozzarela, bazalka, rajčata</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Prosciutto</td>
+                <td class="cena" rowspan="2">159</td>
+            </tr>
+            <tr>
+                <td class="detail">šunka, mozzarela</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Mafia</td>
+                <td class="cena" rowspan="2">169</td>
+            </tr>
+            <tr>
+                <td class="detail">salám, kukuřice, cibule, mozzarella</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Quatro formaggi</td>
+                <td class="cena" rowspan="2">179</td>
+            </tr>
+            <tr>
+                <td class="detail">niva, hermelín, eidam, mozzarella</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Hawaii</td>
+                <td class="cena" rowspan="2">179</td>
+            </tr>
+            <tr>
+                <td class="detail">šunka, ananas, kari, mozzarella</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Picant</td>
+                <td class="cena" rowspan="2">179</td>
+            </tr>
+            <tr>
+                <td class="detail">mozzarella, pikantní salám, feferonky</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Al Capone</td>
+                <td class="cena" rowspan="2">189</td>
+            </tr>
+            <tr>
+                <td class="detail">slanina, uzený sýr, cibule, vejce, mozzarella
+
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Polo</td>
+                <td class="cena" rowspan="2">189</td>
+            </tr>
+            <tr>
+                <td class="detail">kuřecí maso, rajčata, bazalka, mozzarella</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Mirtilli polo</td>
+                <td class="cena" rowspan="2">199</td>
+            </tr>
+            <tr>
+                <td class="detail">smetana, kuřecí maso, brusinky, hermelín, mozzarella</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Grande David</td>
+                <td class="cena" rowspan="2">199</td>
+            </tr>
+            <tr>
+                <td class="detail">smetana, slanina, niva, čedar, mozzarella, červená cibule</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <div class="line"></div>
+        <h3 id="testoviny">Těstoviny</h3>
+        <div class="foto">
+            <img src="imgs/jidelni/zoran-borojevic--5FECW242og-unsplash.jpg" alt="Photo by Zoran Borojevic on Unsplash">
+            </div>
+        <div class="line"></div>
+
+        <table>
+            <tr>
+                <td class="jidlo">Špagety s boloňskou omáčkou, rajčaty, česnekem a bazalkou</td>
+                <td class="cena" rowspan="2">145</td>
+            </tr>
+            <tr>
+                <td class="detail">300g</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Špagety Toskana</td>
+                <td class="cena" rowspan="2">145</td>
+            </tr>
+            <tr>
+                <td class="detail">300g | kousky kuřecího masa, cibulka, žampión, pórek, smetana, parmezán</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Špagety Carbonara</td>
+                <td class="cena" rowspan="2">145</td>
+            </tr>
+            <tr>
+                <td class="detail">300g | parmská šunka, česnek, smetana, žloutek, parmezán</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Zapečené těstoviny s kuřecím masem, špenátem a sýrem</td>
+                <td class="cena" rowspan="2">145</td>
+            </tr>
+            <tr>
+                <td class="detail">300g</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Zapečené těstoviny s anglickou slaninou, špenátem a nivou</td>
+                <td class="cena" rowspan="2">145</td>
+            </tr>
+            <tr>
+                <td class="detail">300g</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <div class="line"></div>
+        <h3 id="salaty">Saláty</h3>
+        <div class="foto">
+            <img src="imgs/jidelni/food-g10b7a765e_1280.jpg" alt="Pixabay">
+            </div>
+        <div class="line"></div>
+
+        <table>
+            <tr>
+                <td class="jidlo">Šopský salát</td>
+                <td class="cena" rowspan="2">119</td>
+            </tr>
+            <tr>
+                <td class="detail">200g | míchaná zelenina - rajče, okurka, paprika, 30 g bal. sýr, toustový chléb</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Řecký salát</td>
+                <td class="cena" rowspan="2">135</td>
+            </tr>
+            <tr>
+                <td class="detail">200g | rajče, okurka, paprika, vař. vejce, bal. sýr, olivový olej, bazalka, toust. chléb</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Zeleninový salát Marco Polo</td>
+                <td class="cena" rowspan="2">199</td>
+            </tr>
+            <tr>
+                <td class="detail">300g | gril. losos, cibule, žampiony, rajčata, okurek, paprika, ledový salát, toust. chléb, oliv. olej</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="jidlo">Česneková nebo bylinková bageta</td>
+                <td class="cena" rowspan="2">35</td>
+            </tr>
+            <tr>
+                <td class="detail">1ks | doporučujeme k salátům čerstvou rozpečenou bagetu</td>
+            </tr>
+        </table>
+        <br>
+    </main>
+    
+    <footer>
+        <p id="autor"><b>Ondřej Foltín &copy; 2022</b></p>
+        <p class="info">Images from <a href="https://www.pexels.com/cs-cz" target="_blank">Pexels</a> & <a
+                href="https://pixabay.com/" target="_blank">Pixabay</a> & <a href="https://unsplash.com/"
+                target="_blank">Unsplash</a></p>
+        <p class="info">Icons from <a href="https://fontello.com" target="_blank">Fontello</a> & <a
+                href="https://www.svgrepo.com" target="_blank">SVG Repo</a></p>
+    </footer>
+</div>
+</body>
+</html>
